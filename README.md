@@ -1,9 +1,9 @@
-Droidian
+FuriOS
 ========
 
-Droidian is a GNU/Linux distribution based on top of Mobian, a Debian-based distribution for mobile devices. The goal of Droidian is to be able to run Mobian on Android phones.
+FuriOS is a GNU/Linux distribution based on top of Debian for mobile devices. The goal of FuriOS is to be able to run Mobian on Android phones.
 
-This repository is the canonical place to get Droidian images.
+This repository is the canonical place to get FuriOS images.
 
 # Which image to get?
 
@@ -12,10 +12,10 @@ There are two different types of images:
 * Fastboot-flashable image
 * Recovery-flashable zipfile
 
-Fastboot-flashable images are, instead, the recommended way to install Droidian. These images are device specific, so if you want one for your device you should create one yourself.
+Fastboot-flashable images are, instead, the recommended way to install FuriOS. These images are device specific, so if you want one for your device you should create one yourself.
 Fastboot-flashable images support Full Disk Encryption, and make use of the whole userdata partition.
 
-The recovery flashable zipfile needs to be flashed via a suitable Android recovery (such as TWRP). Recovery flashable zipfiles are generic, and are useful to test drive Droidian or in early device porting stages.
+The recovery flashable zipfile needs to be flashed via a suitable Android recovery (such as TWRP). Recovery flashable zipfiles are generic, and are useful to test drive FuriOS or in early device porting stages.
 You should pick up the correct zipfile for your specific device:
 
 * Device with an Android 9 vendor: api28
@@ -69,7 +69,7 @@ Then, boot your favourite Android recovery.
 
 ## Installation
 
-From recovery open adb sideload mode (under advanced on TWRP) and run following commands on your computer replacing `ARCH_YYYYMMDD` with the version of Droidian and `vendor-device` with the vendor and device codenames:
+From recovery open adb sideload mode (under advanced on TWRP) and run following commands on your computer replacing `ARCH_YYYYMMDD` with the version of FuriOS and `vendor-device` with the vendor and device codenames:
 
 * `adb sideload droidian-OFFICIAL-phosh-phone-rootfs-apiXX-ARCH-VERSION_DATE.zip`
 
@@ -85,7 +85,7 @@ Note that you have to restart the sideload mode by tapping back and starting sid
 
 ## Finalizing installation
 
-Now, you have to reboot the device. It should boot to phosh (a graphical user interface used by Droidian) after rebooting once more automatically. When the device has booted, you can unlock the device with the default passcode `1234`.
+Now, you have to reboot the device. It should boot to phosh (a graphical user interface used by FuriOS) after rebooting once more automatically. When the device has booted, you can unlock the device with the default passcode `1234`.
 
 ## Troubleshooting
 
