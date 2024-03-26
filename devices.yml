@@ -32,6 +32,11 @@
     - adaptation-droidian-zahedan
     - adaptation-zahedan-configs
 
+.furiphone_krypton_packages:
+  packages: &furiphone_krypton_packages
+    - adaptation-furiphone-krypton
+    - adaptation-krypton-configs
+
 ########################################################################
 # Recovery-flashable rootfses                                          #
 ########################################################################
@@ -124,3 +129,17 @@ daria_zahedan:
   apilevel: 32
 
   packages: *daria_zahedan_packages
+
+#
+# FuriPhone
+#
+
+# FuriPhone FLX1 (krypton)
+furiphone_krypton:
+  type: image
+  arch: arm64
+  edition: phosh
+  variant: phone
+  apilevel: 32
+
+  packages: *furiphone_krypton_packages
